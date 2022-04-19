@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="Projekt update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/Banjo/Banjo.java" afterDir="false" />
+    <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="Erste Aufgabe erledigt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/SumArrays/SumArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.Main.testSum">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CL_Tasks" />
@@ -53,8 +54,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main.testSum" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CL_Tasks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="METHOD_NAME" value="testSum" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Main.testSum" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -67,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650354031881</updated>
-      <workItem from="1650354033291" duration="7164000" />
+      <workItem from="1650354033291" duration="9033000" />
     </task>
     <task id="LOCAL-00001" summary="Projekt init">
       <created>1650354119653</created>
@@ -83,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650374179360</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Erste Aufgabe erledigt">
+      <created>1650377563023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650377563023</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Projekt init" />
     <MESSAGE value="Projekt update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projekt update" />
+    <MESSAGE value="Erste Aufgabe erledigt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erste Aufgabe erledigt" />
   </component>
 </project>
