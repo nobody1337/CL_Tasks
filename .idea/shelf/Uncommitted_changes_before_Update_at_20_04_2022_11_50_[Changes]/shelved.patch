@@ -1,0 +1,284 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>de.koehling</groupId>\r\n    <artifactId>cltasks</artifactId>\r\n    <packaging>jar</packaging>\r\n    <version>1.0-SNAPSHOT</version>\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>org.testng</groupId>\r\n            <artifactId>testng</artifactId>\r\n            <version>RELEASE</version>\r\n            <scope>compile</scope>\r\n        </dependency>\r\n    </dependencies>\r\n\r\n    <properties>\r\n        <maven.compiler.source>8</maven.compiler.source>\r\n        <maven.compiler.target>8</maven.compiler.target>\r\n        <project.build.souceEncoding>UTF-8</project.build.souceEncoding>\r\n    </properties>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 064acd8c518aa97a2bf58dcafc1dd44364be47f0)
++++ b/pom.xml	(date 1650383636715)
+@@ -15,6 +15,7 @@
+             <version>RELEASE</version>
+             <scope>compile</scope>
+         </dependency>
++
+     </dependencies>
+ 
+     <properties>
+Index: src/main/java/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import CodewarsTasks.Banjo.Banjo;\r\nimport CodewarsTasks.SumArrays.SumArray;\r\nimport org.testng.annotations.Test;\r\n\r\nimport static org.testng.Assert.assertEquals;\r\n\r\npublic class Main {\r\n    @Test\r\n    public static void testSum() {\r\n        assertEquals(0,      SumArray.sum(new double[] { }),                1e-4);\r\n        assertEquals(-2.398, SumArray.sum(new double[] {-2.398}),           1e-4);\r\n        assertEquals(6,      SumArray.sum(new double[] {1, 2, 3}),          1e-4);\r\n        assertEquals(6.6,    SumArray.sum(new double[] {1.1, 2.2, 3.3}),    1e-4);\r\n        assertEquals(9.2,    SumArray.sum(new double[] {1, 5.2, 4, 0, -1}), 1e-4);\r\n        assertEquals(320,    SumArray.sum(new double[] {30, 89, 100, 101}), 1e-4);\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        //Tests der Aufgabe Banjo\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"Tom\"));\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"Rita\"));\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"Axel\"));\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"Rapunzel\"));\r\n        System.out.println(\"--------\");\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"tom\"));\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"rita\"));\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"axel\"));\r\n        System.out.println(Banjo.areYouPlayingBanjo(\"rapunzel\"));\r\n        System.out.println(\"--------\");\r\n\r\n        //Tests der Aufgabe SumArray\r\n        System.out.println(SumArray.sum(new double[] {1, 2, 3}));\r\n       //testSum();\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Main.java b/src/main/java/Main.java
+--- a/src/main/java/Main.java	(revision 064acd8c518aa97a2bf58dcafc1dd44364be47f0)
++++ b/src/main/java/Main.java	(date 1650383812283)
+@@ -5,15 +5,8 @@
+ import static org.testng.Assert.assertEquals;
+ 
+ public class Main {
+-    @Test
+-    public static void testSum() {
+-        assertEquals(0,      SumArray.sum(new double[] { }),                1e-4);
+-        assertEquals(-2.398, SumArray.sum(new double[] {-2.398}),           1e-4);
+-        assertEquals(6,      SumArray.sum(new double[] {1, 2, 3}),          1e-4);
+-        assertEquals(6.6,    SumArray.sum(new double[] {1.1, 2.2, 3.3}),    1e-4);
+-        assertEquals(9.2,    SumArray.sum(new double[] {1, 5.2, 4, 0, -1}), 1e-4);
+-        assertEquals(320,    SumArray.sum(new double[] {30, 89, 100, 101}), 1e-4);
+-    }
++
++
+ 
+     public static void main(String[] args) {
+         //Tests der Aufgabe Banjo
+@@ -30,7 +23,7 @@
+ 
+         //Tests der Aufgabe SumArray
+         System.out.println(SumArray.sum(new double[] {1, 2, 3}));
+-       //testSum();
++        //testSum();
+ 
+     }
+ }
+Index: src/main/java/CodewarsTasks/SumArrays/SumArray.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package CodewarsTasks.SumArrays;\r\n/*\r\nWrite a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer.\r\nIf the array does not contain any numbers then you should return 0.\r\n\r\nExamples\r\n\r\nInput: [1, 5.2, 4, 0, -1]\r\nOutput: 9.2\r\n\r\nInput: []\r\nOutput: 0\r\n\r\nInput: [-2.398]\r\nOutput: -2.398\r\n\r\nAssumptions\r\n\r\nYou can assume that you are only given numbers.\r\nYou cannot assume the size of the array.\r\nYou can assume that you do get an array and if the array is empty, return 0.\r\nTests expect accuracy of 1e-4.\r\n\r\nWhat We're Testing\r\n\r\nWe're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.\r\nAdvanced users may find this extremely easy and can easily write this in one line.\r\n*/\r\n\r\npublic class SumArray {\r\n    public static double sum(double[] numbers) {\r\n        double summe = 0;\r\n        if (numbers.length>=1) {\r\n            for (int i = 0; i < numbers.length; i++) {\r\n                summe = summe + numbers[i];\r\n            }\r\n        }\r\n        else {\r\n            return 0.0;\r\n        }\r\n        return summe;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/CodewarsTasks/SumArrays/SumArray.java b/src/main/java/CodewarsTasks/SumArrays/SumArray.java
+--- a/src/main/java/CodewarsTasks/SumArrays/SumArray.java	(revision 064acd8c518aa97a2bf58dcafc1dd44364be47f0)
++++ b/src/main/java/CodewarsTasks/SumArrays/SumArray.java	(date 1650383812274)
+@@ -27,6 +27,10 @@
+ Advanced users may find this extremely easy and can easily write this in one line.
+ */
+ 
++import org.testng.annotations.Test;
++
++import static org.testng.Assert.assertEquals;
++
+ public class SumArray {
+     public static double sum(double[] numbers) {
+         double summe = 0;
+@@ -40,4 +44,13 @@
+         }
+         return summe;
+     }
++    @Test
++    public static void testSum() {
++        assertEquals(0,      SumArray.sum(new double[] { }),                1e-4);
++        assertEquals(-2.398, SumArray.sum(new double[] {-2.398}),           1e-4);
++        assertEquals(6,      SumArray.sum(new double[] {1, 2, 3}),          1e-4);
++        assertEquals(6.6,    SumArray.sum(new double[] {1.1, 2.2, 3.3}),    1e-4);
++        assertEquals(9.2,    SumArray.sum(new double[] {1, 5.2, 4, 0, -1}), 1e-4);
++        assertEquals(320,    SumArray.sum(new double[] {30, 89, 100, 101}), 1e-4);
++    }
+ }
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1650382797964)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1650382797964)
+@@ -0,0 +1,12 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
++      <option name="excludeList">
++        <list>
++          <option value="org.slf4j:slf4j-api" />
++        </list>
++      </option>
++    </inspection_tool>
++  </profile>
++</component>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8eb6be09-46d8-4b94-ba70-7cbab06bbf9d\" name=\"Changes\" comment=\"Zweite Aufgabe\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"280WXWrNnoq18RgAJ0fMq8kO5L3\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"TestNG.Main.testSum\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"CL_Tasks\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Main.testSum\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"CL_Tasks\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <option name=\"METHOD_NAME\" value=\"testSum\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.Main.testSum\" />\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8eb6be09-46d8-4b94-ba70-7cbab06bbf9d\" name=\"Changes\" comment=\"\" />\r\n      <created>1650354031881</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1650354031881</updated>\r\n      <workItem from=\"1650354033291\" duration=\"9510000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Projekt init\">\r\n      <created>1650354119653</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1650354119653</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Projekt update\">\r\n      <created>1650374179360</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1650374179360</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Erste Aufgabe erledigt\">\r\n      <created>1650377563023</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1650377563023</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Zweite Aufgabe\">\r\n      <created>1650380250602</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1650380250602</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Projekt init\" />\r\n    <MESSAGE value=\"Projekt update\" />\r\n    <MESSAGE value=\"Erste Aufgabe erledigt\" />\r\n    <MESSAGE value=\"Zweite Aufgabe\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Zweite Aufgabe\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 064acd8c518aa97a2bf58dcafc1dd44364be47f0)
++++ b/.idea/workspace.xml	(date 1650383867798)
+@@ -4,19 +4,18 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="Zweite Aufgabe" />
++    <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/CodewarsTasks/SumArrays/SumArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/SumArrays/SumArray.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+@@ -24,35 +23,49 @@
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="280WXWrNnoq18RgAJ0fMq8kO5L3" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+   }
+-}]]></component>
+-  <component name="RunManager" selected="TestNG.Main.testSum">
++}</component>
++  <component name="RunManager" selected="TestNG.SumArray.testSum">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="Main" />
+-      <module name="CL_Tasks" />
++      <module name="cltasks" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <configuration name="Main.testSum" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="CL_Tasks" />
++      <module name="cltasks" />
+       <option name="PACKAGE_NAME" value="" />
+       <option name="MAIN_CLASS_NAME" value="Main" />
++      <option name="METHOD_NAME" value="testSum" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="SumArray.testSum" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="cltasks" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="CodewarsTasks.SumArrays.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="CodewarsTasks.SumArrays" />
++      <option name="MAIN_CLASS_NAME" value="CodewarsTasks.SumArrays.SumArray" />
+       <option name="METHOD_NAME" value="testSum" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+@@ -63,6 +76,7 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="TestNG.SumArray.testSum" />
+         <item itemvalue="TestNG.Main.testSum" />
+         <item itemvalue="Application.Main" />
+       </list>
+@@ -76,58 +90,8 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1650354031881</updated>
+-      <workItem from="1650354033291" duration="9510000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="Projekt init">
+-      <created>1650354119653</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1650354119653</updated>
+-    </task>
+-    <task id="LOCAL-00002" summary="Projekt update">
+-      <created>1650374179360</created>
+-      <option name="number" value="00002" />
+-      <option name="presentableId" value="LOCAL-00002" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1650374179360</updated>
+-    </task>
+-    <task id="LOCAL-00003" summary="Erste Aufgabe erledigt">
+-      <created>1650377563023</created>
+-      <option name="number" value="00003" />
+-      <option name="presentableId" value="LOCAL-00003" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1650377563023</updated>
++      <workItem from="1650383855114" duration="12000" />
+     </task>
+-    <task id="LOCAL-00004" summary="Zweite Aufgabe">
+-      <created>1650380250602</created>
+-      <option name="number" value="00004" />
+-      <option name="presentableId" value="LOCAL-00004" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1650380250602</updated>
+-    </task>
+-    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="Projekt init" />
+-    <MESSAGE value="Projekt update" />
+-    <MESSAGE value="Erste Aufgabe erledigt" />
+-    <MESSAGE value="Zweite Aufgabe" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Zweite Aufgabe" />
+-  </component>
+ </project>
+\ No newline at end of file

@@ -13,10 +13,12 @@ package CodewarsTasks.TransportationOnVacation;
 
 public class Transportation {
     public static int rentalCarCost(int d) {
-        int rentalCost;
-        switch (d){
-            case
+        int difRentalCost=d*40;
+        if(d>=7){
+            difRentalCost-=50;
+        } else if (d>=3) {
+            difRentalCost-=20;
         }
-        return rentalCost;
+        return difRentalCost;
     }
 }
