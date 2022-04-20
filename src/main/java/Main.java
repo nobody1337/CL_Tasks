@@ -1,5 +1,6 @@
 import CodewarsTasks.Banjo.Banjo;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
+import CodewarsTasks.InvertValues.Invert;
 import CodewarsTasks.OppositeNumber.Opposite;
 import CodewarsTasks.RemoveFirstAndLastCharackter.RemoveChars;
 import CodewarsTasks.SumArrays.SumArray;
@@ -57,5 +58,10 @@ public class Main {
         System.out.println("-------");
         System.out.println(FindValue.check(new Object[]{2,3,4,5,6},4));
 
+        //Tests zur Aufgabe InvertValues
+        System.out.println("--------");
+        for (int a: Invert.invert(new int[]{1,2,3,4,-18,-20})) {
+            System.out.println(a);
+        }
     }
 }
