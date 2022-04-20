@@ -34,16 +34,25 @@ import static org.testng.Assert.assertEquals;
 public class SumArray {
     public static double sum(double[] numbers) {
         double summe = 0;
+
         if (numbers.length>=1) {
-            for (int i = 0; i < numbers.length; i++) {
-                summe = summe + numbers[i];
+            //for (int i = 0; i < numbers.length; i++) {
+                //summe+=numbers[i];
+                for (double a:numbers) {
+                    summe+=a;
+
+                }
+
             }
-        }
+        //}
+
         else {
             return 0;
         }
         return summe;
     }
+
+
     @Test
     public static void testSum() {
         assertEquals(0,      SumArray.sum(new double[] { }),                1e-4);
