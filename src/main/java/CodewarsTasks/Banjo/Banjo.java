@@ -11,8 +11,7 @@ package CodewarsTasks.Banjo;
 public class Banjo {
     public static String areYouPlayingBanjo(String name){
           String firstLetter = String.valueOf(name.charAt(0));
-          String pruefe = "R";
-          if (firstLetter.equalsIgnoreCase(pruefe)){
+          if (firstLetter.equalsIgnoreCase("R")){
               return name + " plays banjo";
           }
           else{

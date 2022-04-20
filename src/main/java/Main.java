@@ -32,7 +32,7 @@ public class Main {
 
         //Tests der Aufgabe SumArray
         System.out.println(SumArray.sum(new double[] {1, 2, 3}));
-       //testSum();
+        //testSum();
         //Tests zur Aufgabe TransportationOnVacation
         System.out.println("--------");
         System.out.println(Transportation.rentalCarCost(3));
