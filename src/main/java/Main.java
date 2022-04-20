@@ -4,6 +4,7 @@ import CodewarsTasks.OppositeNumber.Opposite;
 import CodewarsTasks.RemoveFirstAndLastCharackter.RemoveChars;
 import CodewarsTasks.SumArrays.SumArray;
 import CodewarsTasks.TransportationOnVacation.Transportation;
+import CodewarsTasks.YouOnlyNeedOne.FindValue;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -51,6 +52,10 @@ public class Main {
         System.out.println("--------");
         System.out.println(RemoveChars.remove("Hallo"));
         System.out.println(RemoveChars.remove("Hallo Welt"));
+
+        //Tests zur Aufgabe YouOnlyNeedOne
+        System.out.println("-------");
+        System.out.println(FindValue.check(new Object[]{2,3,4,5,6},4));
 
     }
 }
