@@ -3,6 +3,7 @@ import CodewarsTasks.AllStarCodeChallenge18.Occurrences;
 import CodewarsTasks.AreaOrPerimeter.Area;
 import CodewarsTasks.Banjo.Banjo;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
+import CodewarsTasks.ExpressionsMatter.Expressions;
 import CodewarsTasks.HowGoodAreUReally.HowGood;
 import CodewarsTasks.InvertValues.Invert;
 import CodewarsTasks.OppositeNumber.Opposite;
@@ -12,6 +13,8 @@ import CodewarsTasks.TransportationOnVacation.Transportation;
 import CodewarsTasks.YouCantCodeUnderPressure1.CodeUnderPressure;
 import CodewarsTasks.YouOnlyNeedOne.FindValue;
 import org.testng.annotations.Test;
+
+import java.sql.SQLOutput;
 
 import static org.testng.Assert.assertEquals;
 
@@ -92,6 +95,11 @@ public class Main {
         //Tests zur Aufgabe AllStarCodeChallenge
         System.out.println("--------");
         System.out.println(Occurrences.strCount("hallo",'p'));
+
+        //Tests zur Aufgabe ExpressionsMatter
+        System.out.println("--------");
+        System.out.println(Expressions.expressionsMatter(1,1,1));
+        System.out.println(Expressions.expressionsMatter(5,3,2));
 
     }
 }
