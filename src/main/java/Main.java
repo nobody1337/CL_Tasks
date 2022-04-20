@@ -1,6 +1,7 @@
 import CodewarsTasks.Banjo.Banjo;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
 import CodewarsTasks.OppositeNumber.Opposite;
+import CodewarsTasks.RemoveFirstAndLastCharackter.RemoveChars;
 import CodewarsTasks.SumArrays.SumArray;
 import CodewarsTasks.TransportationOnVacation.Transportation;
 import org.testng.annotations.Test;
@@ -45,6 +46,11 @@ public class Main {
             System.out.println(a);
         }
         //System.out.println(Solution.stringToArray("Hallo Welt"));
+
+        //Tests zur Aufgabe RomoveFirstAndLastCharackter
+        System.out.println("--------");
+        System.out.println(RemoveChars.remove("Hallo"));
+        System.out.println(RemoveChars.remove("Hallo Welt"));
 
     }
 }
