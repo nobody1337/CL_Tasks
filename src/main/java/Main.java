@@ -1,3 +1,5 @@
+import CodewarsTasks.ANeedleInTheHaystack.SearchNeedle;
+import CodewarsTasks.AllStarCodeChallenge18.Occurrences;
 import CodewarsTasks.AreaOrPerimeter.Area;
 import CodewarsTasks.Banjo.Banjo;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
@@ -83,6 +85,13 @@ public class Main {
         System.out.println(HowGood.betterThanAverage(new int[]{12, 23, 34, 45, 56, 67, 78, 89, 90},69));
         System.out.println(HowGood.betterThanAverage(new int[]{100,90},11));
 
+        //Tests zur Aufgabe ANeedleInTheHaystack
+        System.out.println("--------");
+        System.out.println(SearchNeedle.findNeedle(new Object[]{1,"needle","Luft","Erde","Wasser","Feuer"}));
+
+        //Tests zur Aufgabe AllStarCodeChallenge
+        System.out.println("--------");
+        System.out.println(Occurrences.strCount("hallo",'p'));
 
     }
 }

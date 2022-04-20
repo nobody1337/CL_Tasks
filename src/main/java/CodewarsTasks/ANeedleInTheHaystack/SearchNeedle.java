@@ -11,10 +11,10 @@ package CodewarsTasks.ANeedleInTheHaystack;
 public class SearchNeedle {
     public static String findNeedle(Object[] haystack) {
         for (int i = 0; i < haystack.length ; i++) {
-            if(haystack[i].equals("needle")){
-                return "found the needle at position" + (i+1);
+            if(haystack[i]=="needle"){
+                return "found the needle at position " + i;
             }
         }
-        return null;
+        return " ";
     }
 }
