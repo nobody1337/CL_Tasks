@@ -10,12 +10,19 @@ package CodewarsTasks.Banjo;
 
 public class Banjo {
     public static String areYouPlayingBanjo(String name){
-
-        if (name.toUpperCase().startsWith("R")){
-            return name + " plays banjo";
-        }
-        else{
+          String firstLetter = String.valueOf(name.charAt(0));
+          String pruefe = "R";
+          if (firstLetter.equalsIgnoreCase(pruefe)){
+              return name + " plays banjo";
+          }
+          else{
             return name + " does not play banjo";
         }
+//        if (name.toUpperCase().startsWith("R")){
+//            return name + " plays banjo";
+//        }
+//        else{
+//            return name + " does not play banjo";
+//        }
     }
 }

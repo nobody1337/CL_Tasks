@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="Zweite Aufgabe" />
+    <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/TransportationOnVacation/Transportation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CodewarsTasks/Banjo/Banjo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/Banjo/Banjo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CodewarsTasks/SumArrays/SumArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/SumArrays/SumArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.Main.testSum">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -76,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650354031881</updated>
-      <workItem from="1650354033291" duration="9510000" />
+      <workItem from="1650354033291" duration="9541000" />
+      <workItem from="1650438878461" duration="7251000" />
     </task>
     <task id="LOCAL-00001" summary="Projekt init">
       <created>1650354119653</created>
@@ -106,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650380250602</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1650380486291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650380486291</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +142,7 @@
     <MESSAGE value="Projekt update" />
     <MESSAGE value="Erste Aufgabe erledigt" />
     <MESSAGE value="Zweite Aufgabe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zweite Aufgabe" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class Main {
+    //Tests der Aufgabe SumArray
     @Test
     public static void testSum() {
         assertEquals(0,      SumArray.sum(new double[] { }),                1e-4);
@@ -28,9 +29,9 @@ public class Main {
         System.out.println(Banjo.areYouPlayingBanjo("rapunzel"));
         System.out.println("--------");
 
-        //Tests der Aufgabe SumArray
-        System.out.println(SumArray.sum(new double[] {1, 2, 3}));
-       //testSum();
+
+
+
 
     }
 }
