@@ -1,10 +1,13 @@
+import CodewarsTasks.AreaOrPerimeter.Area;
 import CodewarsTasks.Banjo.Banjo;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
+import CodewarsTasks.HowGoodAreUReally.HowGood;
 import CodewarsTasks.InvertValues.Invert;
 import CodewarsTasks.OppositeNumber.Opposite;
 import CodewarsTasks.RemoveFirstAndLastCharackter.RemoveChars;
 import CodewarsTasks.SumArrays.SumArray;
 import CodewarsTasks.TransportationOnVacation.Transportation;
+import CodewarsTasks.YouCantCodeUnderPressure1.CodeUnderPressure;
 import CodewarsTasks.YouOnlyNeedOne.FindValue;
 import org.testng.annotations.Test;
 
@@ -63,5 +66,23 @@ public class Main {
         for (int a: Invert.invert(new int[]{1,2,3,4,-18,-20})) {
             System.out.println(a);
         }
+
+        //Tests zur Aufgabe AreaOrPerimeter
+        System.out.println("-------");
+        System.out.println(Area.areaOrPerimeter(2,2));
+        System.out.println(Area.areaOrPerimeter(5,10));
+
+        //Tests zur Aufgabe YouCantCodeUnderPressure
+        System.out.println("-------");
+        System.out.println(CodeUnderPressure.doubleInteger(2));
+
+        //Tests zur Aufgabe HowGoodAreUReally
+        System.out.println("-------");
+        System.out.println(HowGood.betterThanAverage(new int[]{2,3},5));
+        System.out.println(HowGood.betterThanAverage(new int[]{100, 40, 34, 57, 29, 72, 57, 88},75));
+        System.out.println(HowGood.betterThanAverage(new int[]{12, 23, 34, 45, 56, 67, 78, 89, 90},69));
+        System.out.println(HowGood.betterThanAverage(new int[]{100,90},11));
+
+
     }
 }

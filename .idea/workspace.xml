@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8eb6be09-46d8-4b94-ba70-7cbab06bbf9d" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/InvertValues/Invert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/ANeedleInTheHaystack/SearchNeedle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/AreaOrPerimeter/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/HowGoodAreUReally/HowGood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CodewarsTasks/YouCantCodeUnderPressure1/CodeUnderPressure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
@@ -53,6 +56,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cltasks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main.testSum (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cltasks" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,6 +94,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.Main" />
         <item itemvalue="TestNG.Main.testSum (1)" />
         <item itemvalue="TestNG.Main.testSum" />
       </list>
@@ -172,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650456805446</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update">
+      <created>1650457649256</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1650457649256</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
