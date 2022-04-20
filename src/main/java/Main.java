@@ -2,7 +2,9 @@ import CodewarsTasks.ANeedleInTheHaystack.SearchNeedle;
 import CodewarsTasks.AllStarCodeChallenge18.Occurrences;
 import CodewarsTasks.AreaOrPerimeter.Area;
 import CodewarsTasks.Banjo.Banjo;
+import CodewarsTasks.BasicMathematicalOperations.BasicOperations;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
+import CodewarsTasks.EvenOrOdd.EvenorOdd;
 import CodewarsTasks.ExpressionsMatter.Expressions;
 import CodewarsTasks.HowGoodAreUReally.HowGood;
 import CodewarsTasks.InvertValues.Invert;
@@ -100,6 +102,18 @@ public class Main {
         System.out.println("--------");
         System.out.println(Expressions.expressionsMatter(1,1,1));
         System.out.println(Expressions.expressionsMatter(5,3,2));
+
+        //Tests zur Aufgabe EvenOrOdd
+        System.out.println("------");
+        System.out.println(EvenorOdd.even_or_odd(6));
+        System.out.println(EvenorOdd.even_or_odd(7));
+
+        //Tests zur Aufgabe BasicMathematicalOperations
+        System.out.println("-------");
+        System.out.println(BasicOperations.basicMath("+",2,2));
+        System.out.println(BasicOperations.basicMath("-",2,2));
+        System.out.println(BasicOperations.basicMath("*",2,2));
+        System.out.println(BasicOperations.basicMath("/",2,2));
 
     }
 }
