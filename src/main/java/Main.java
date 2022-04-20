@@ -1,4 +1,5 @@
 import CodewarsTasks.Banjo.Banjo;
+import CodewarsTasks.OppositeNumber.Opposite;
 import CodewarsTasks.SumArrays.SumArray;
 import CodewarsTasks.TransportationOnVacation.Transportation;
 import org.testng.annotations.Test;
@@ -32,9 +33,12 @@ public class Main {
         //Tests der Aufgabe SumArray
         System.out.println(SumArray.sum(new double[] {1, 2, 3}));
        //testSum();
-
+        //Tests zur Aufgabe TransportationOnVacation
         System.out.println("--------");
         System.out.println(Transportation.rentalCarCost(3));
+        //Tests zur Aufgabe Opposite
+        System.out.println("--------");
+        System.out.println(Opposite.opposite(3067));
 
     }
 }
