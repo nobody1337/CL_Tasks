@@ -3,6 +3,7 @@ import CodewarsTasks.AllStarCodeChallenge18.Occurrences;
 import CodewarsTasks.AreaOrPerimeter.Area;
 import CodewarsTasks.Banjo.Banjo;
 import CodewarsTasks.BasicMathematicalOperations.BasicOperations;
+import CodewarsTasks.CalculateBMI.Calculate;
 import CodewarsTasks.ConvertAStringToAnArray.Solution;
 import CodewarsTasks.EvenOrOdd.EvenorOdd;
 import CodewarsTasks.ExpressionsMatter.Expressions;
@@ -114,6 +115,10 @@ public class Main {
         System.out.println(BasicOperations.basicMath("-",2,2));
         System.out.println(BasicOperations.basicMath("*",2,2));
         System.out.println(BasicOperations.basicMath("/",2,2));
+
+        //Tests zur Aufgabe CalculateBMI
+        System.out.println("------");
+        System.out.println(Calculate.bmi(80,1.80));
 
     }
 }
