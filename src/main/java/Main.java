@@ -1,4 +1,5 @@
 import CodewarsTasks.Banjo.Banjo;
+import CodewarsTasks.ConvertAStringToAnArray.Solution;
 import CodewarsTasks.OppositeNumber.Opposite;
 import CodewarsTasks.SumArrays.SumArray;
 import CodewarsTasks.TransportationOnVacation.Transportation;
@@ -39,6 +40,11 @@ public class Main {
         //Tests zur Aufgabe Opposite
         System.out.println("--------");
         System.out.println(Opposite.opposite(3067));
+        //Tests zur Aufgabe ConvertAStringToAnArray
+        for (String a:Solution.stringToArray("Hallo Welt")) {
+            System.out.println(a);
+        }
+        //System.out.println(Solution.stringToArray("Hallo Welt"));
 
     }
 }
