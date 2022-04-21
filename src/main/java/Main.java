@@ -11,6 +11,7 @@ import CodewarsTasks.HowGoodAreUReally.HowGood;
 import CodewarsTasks.InvertValues.Invert;
 import CodewarsTasks.OppositeNumber.Opposite;
 import CodewarsTasks.RemoveFirstAndLastCharackter.RemoveChars;
+import CodewarsTasks.SquareEveryDigit.SquareDigit;
 import CodewarsTasks.SumArrays.SumArray;
 import CodewarsTasks.TransportationOnVacation.Transportation;
 import CodewarsTasks.YouCantCodeUnderPressure1.CodeUnderPressure;
@@ -119,6 +120,10 @@ public class Main {
         //Tests zur Aufgabe CalculateBMI
         System.out.println("------");
         System.out.println(Calculate.bmi(80,1.80));
+
+        //Tests zur Aufgabe SquareDigit
+        System.out.println("-------");
+        System.out.println(SquareDigit.squareDigits(9119));
 
     }
 }
